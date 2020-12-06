@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>James Girven</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- Bulma Version 0.9.0-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <script async type="text/javascript" src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar has-background-primary is-fixed-top">
+        <div class="navbar-brand">
+            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <span class="is-white"></span>
+                <span class="is-white"></span>
+                <span class="is-white"></span>
+            </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item is-white" href="#about">
+                    <span class="icon">
+                        <i class="fas fa-info"></i>
+                    </span>
+                    <span>About</span>
+                </a>
+                <a class="navbar-item is-white" href="#projects">
+                    <span class="icon">
+                        <i class="fas fa-th-list"></i>
+                    </span>
+                    <span>Projects</span>
+                </a>
+                <a class="navbar-item is-white" href="#about">
+                    <span class="icon">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="hero has-background-primary is-fullheight is-fullheight-with-navbar">
+        <div class="hero-body">
+            <div class="container is-white has-scroll">Hello! I'm
+                <h1 class="title is-white is-1 ">
+                    James Girven
+                </h1>
+                <h2 class="subtitle is-white is-3">
+                    Computer Science graduate
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section has-background-dark" id="about">
+        <div class="sect-cont">
+            <!-- Title -->
+            <div class="section-heading">
+                <h3 class="title is-2 has-scroll">About Me</h3>
+                <!-- <h4 class="subtitle is-5">Jack of all trades, master of "some"</h4> -->
+            </div>
+
+            <div class="columns has-same-height is-vcentered has-scroll">
+                <div class="column box">
+                    <!-- Profile picture -->
+                    <div class="">
+                        <div class="card-image">
+                            <img src="assets/selfie.jpg" alt="A picture of me">
+                        </div>
+                        <div class="card-content has-text-justified">
+                            <p>
+                                I'm a recent graduate from the <a href="https://www.lincoln.ac.uk/home/">University of Lincoln</a> 
+                                with a <strong>2:1</strong> in BSc (Hons) <strong>Computer Science</strong>. I am now looking 
+                                for the opportunity to further develop my technical skills and grow as a programmer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column box has-background-primary">
+                    <!-- Profile -->
+                    <div class="">
+                        <div class="card-content">
+                            <h3 class="title is-4">Links & Contact</h3>
+                            <div class="buttons">
+                                <button onclick="window.open('assets/TestCV.pdf', '_blank')" class="button is-fullwidth"
+                                    title="My CV">
+                                    <span class="icon">
+                                        <i class="far fa-file fa-lg"></i>
+                                    </span>
+                                </button>
+                                <button onclick="window.open('https://github.com/Girv98', '_blank')"
+                                    class="button is-fullwidth" title="Github">
+                                    <span class="icon">
+                                        <i class="fab fa-github fa-lg"></i>
+                                    </span>
+                                </button>
+                                <button onclick="window.open('https://www.linkedin.com/in/jgirven', '_blank')"
+                                    class="button is-fullwidth" title="LinkedIn">
+                                    <span class="icon">
+                                        <i class="fab fa-linkedin fa-lg"></i>
+                                    </span>
+                                </button>
+                                <button onclick="location.href=&quot;mailto:james.girven10@gmail.com&quot;"
+                                    class="button is-fullwidth" title="Email Me">
+                                    <span class="icon">
+                                        <i class="far fa-envelope fa-lg"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column box has-scroll">
+                <div>
+                    <div class="card-content">
+                        <h3 class="title dark is-4">Education</h3>
+                        <div>
+                            <p><strong>Computer Science BSc (Hons)</strong>- University of Lincoln</p>
+                            <p>September 2017 - September 2020</p>
+                            <div class="content">
+                                <ul>
+                                    <li>Developed a heuristics-based algorithm with use of signal processing methods to
+                                        create a program that transcribes monophonic and polyphonic guitar audio into
+                                        accurate tablature.
+                                    </li>
+                                    <li>Developed a full-stack cross platform mobile application using React Native that
+                                        allows users to track their mental health.
+                                    </li>
+                                    <li>Worked effectively within a team of peers implementing a ‘Monte Carlo Tree
+                                        Search’ based AI opponent that would consistently beat human opponents at the
+                                        game ‘Ultimate Tic-Tac-Toe’.
+                                    </li>
+                                    <li>Implemented Polynomial Regression and K-means clustering – evaluating them
+                                        using RMSE and SSE. Additionality implemented a Multi-LayerNeural Network
+                                        to extract information from and evaluate a non-trivial dataset.
+                                    </li>
+                                    <li>Participated in the Global Game Jam 2019, helping develop an API driven browser
+                                        game.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="column">
+                <!-- Skills --
+                
+                <div class="card">
+                    <div class="card-content skills-content">
+                        <h3 class="title is-4">Skills</h3>
+                        <div class="content">
+
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>JavaScript:</strong>
+                                            <br>
+                                            <progress class="progress is-$red" value="90" max="100"></progress>
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Vue.js:</strong>
+                                            <br>
+                                            <progress class="progress is-primary" value="90" max="100"></progress>
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Node.js:</strong>
+                                            <br>
+                                            <progress class="progress is-primary" value="75" max="100"></progress>
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>HTML5/CSS3</strong>
+                                            <br>
+                                            <progress class="progress is-primary" value="95" max="100"></progress>
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Databases</strong>
+                                            <br>
+                                            <progress class="progress is-primary" value="66" max="100"></progress>
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+    </section>
+
+    <!-- Skills tags -->
+    <!-- <br>
+        <div class="tags custom-tags">
+          <span class="tag is-light">Node.js</span><span class="tag is-light">Express.js</span><span class="tag is-light">VueJS</span><span
+            class="tag is-light">JavaScript</span><span class="tag is-light">HTML5</span><span class="tag is-light">Canvas</span><span
+            class="tag is-light">CSS3</span><span class="tag is-light">Bulma</span><span class="tag is-light">Bootstrap</span><span
+            class="tag is-light">jQuery</span><span class="tag is-light">Pug</span><span class="tag is-light">Stylus</span><span
+            class="tag is-light">SASS/SCSS</span><span class="tag is-light">Webpack</span><span class="tag is-light">Git</span><span
+            class="tag is-light">ASP.NET Web Forms</span><span class="tag is-light">MSSQL</span><span class="tag is-light">MongoDB</span><span
+            class="tag is-light">Apache Cordova</span><span class="tag is-light">Chrome Extensions</span>
+        </div> -->
+
+    <!-- Services -->
+    <!--
+  <section class="section" id="services">
+    <div class="section-heading">
+      <h3 class="title is-2">Services</h3>
+      <h4 class="subtitle is-5">What can I do for you?</h4>
+    </div>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Front End Web Development</h4>
+              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
+              Vue.js.
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Back End Web Development</h4>
+              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Front End Web Development</h4>
+              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
+              Vue.js.
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Back End Web Development</h4>
+              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+    <!-- CV -->
+    <!--
+    <section class="section" id="cv">
+        <div class="section-heading">
+            <h3 class="title is-2">My CV</h3>
+            <h4 class="subtitle is-5">More about my past</h4>
+            <a href="#" class="button is-link is-medium">
+                <span class="icon">
+                    <i class="fas fa-file-alt"></i>
+                </span>
+                <span>Download My Resume</span>
+            </a>
+        </div>
+    </section> -->
+
+    <!-- Portfolio -->
+    <section class="section has-background-dark" id="projects">
+        <div class="container">
+            <div class="section-heading has-scroll">
+                <h3 class="title is-2">Projects</h3>
+                <h4 class="subtitle is-5">Some of my latest works</h4>
+            </div>
+
+            <div class="container portfolio-container">
+                <div class="columns">
+
+                    <div class="column is-4">
+                        <!-- admin -->
+                        <div class="card has-scroll">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>Tabify</span>
+                                    <span class="is-pulled-right">
+                                        <span class="tag is-default">Desktop</span>
+                                    </span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                A program that generates tablature from recorded guitar audio using signal processing
+                                methods and heuristics-based algorithms.
+                                <hr>
+                                <div class="tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Librosa</span>
+                                    <span class="tag">Scipy</span>
+                                    <span class="tag">Matplotlib</span>
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://github.com/Girv98/Tabify" target='_blank' class="card-footer-item">
+                                    <span class="icon"><i class="fab fa-github"></i></span>
+                                    <span>| Source Code</span></a>
+                            </footer>
+                        </div>
+
+                    </div>
+
+                    <div class="column is-4">
+                        <!-- cheatsheet -->
+                        <div class="card has-scroll">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>Mental Health App</span>
+                                    <span class="is-pulled-right">
+                                        <span class="tag is-default">Mobile</span>
+                                        <span class="tag is-danger">WIP</span>
+                                    </span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <!-- <figure class="image">
+                                    <img src="https://dummyimage.com/555x255/000/fff"
+                                        alt="Cheatsheet template screenshot">
+                                </figure> -->
+                                A cross platform mobile application that allows users to track their mood and anxiety
+                                over time.<br><br>
+                                <hr>
+                                <div class="tags">
+                                    <span class="tag">React Native</span>
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">Node</span>
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://github.com/Girv98" target='_blank' class="card-footer-item">
+                                    <span class="icon"> <i class="fab fa-github"></i></span>
+                                    <span>| Coming Soon</span>
+
+                                </a>
+                            </footer>
+                        </div>
+
+                        <div class="card has-scroll">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>More to Come!</span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                I have several projects that are planned and in development. Follow my Github to stay
+                                informed with future projects.
+                                <br><br><br><br>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://github.com/Girv98" target='_blank' class="card-footer-item">
+                                    <span class="icon"><i class="fab fa-github"></i></span>
+                                    <span>| Stay Informed</span></a>
+                            </footer>
+                        </div>
+
+                    </div>
+
+                    <div class="column is-4">
+                        <!-- cheatsheet -->
+                        <div class="card has-scroll">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    <span>Sound Change Applier</span>
+                                    <span class="is-pulled-right">
+                                        <span class="tag is-default">Web</span>
+                                        <span class="tag is-danger">WIP</span>
+                                    </span>
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                A linguistics tool that allows the user to apply phonological rules
+                                to an input lexicon using distinctive features
+                                <hr>
+                                <div class="tags">
+                                    <span class="tag">Javascript</span>
+                                    <span class="tag">Python</span>
+                                    <span class="tag">JSON</span>
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://github.com/Girv98" target='_blank' class="card-footer-item">
+                                    <span class="icon"> <i class="fab fa-github"></i></span>
+                                    <span>| Coming Soon</span>
+
+                                </a>
+                            </footer>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievement Level -->
+    <!-- <section class="section">
+    <nav class="level">
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Tweets</p>
+          <p class="title">3,456</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Following</p>
+          <p class="title">123</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Followers</p>
+          <p class="title">456K</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Likes</p>
+          <p class="title">789</p>
+        </div>
+      </div>
+    </nav>
+  </section> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-heading has-text-centered">
+            <p>
+                James Girven 2020
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+	<script src="js/scroll.js"></script>
+</body>
+
+</html>
