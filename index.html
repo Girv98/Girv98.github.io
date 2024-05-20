@@ -5,47 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>James Girven</title>
-    <meta name="description" content="This site is intended as a repository all things me. At the moment, this is just a simple CV/Portfolio site. However I have plans to expand the content on this site and host some of my personal work.">
+    <title>Home - James Girven</title>
+    <meta name="description" content="This site is intended as a repository all things me.">
     <meta name="google-site-verification" content="A_9fwteRNjYcYf4xXO7xEzGAOqwBZYKX4EGjrFYEai4" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
         integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <!-- Bulma Version 0.9.0-->
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
     <script async type="text/javascript" src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
+    <div id="wrapper">
     <!-- Navigation bar -->
-    <nav class="navbar has-background-primary is-fixed-top">
+    <nav class="navbar has-background-primary tranparent is-fixed-top">
         <div class="navbar-brand">
-            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                <span class="is-white"></span>
-                <span class="is-white"></span>
-                <span class="is-white"></span>
+            <div class="navbar-burger burger has-background-primary is-fg" data-target="navbarExampleTransparentExample">
+                <span class="is-fg"></span>
+                <span class="is-fg"></span>
+                <span class="is-fg"></span>
+                <span class="is-fg"></span>
             </div>
         </div>
 
         <div id="navbarExampleTransparentExample" class="navbar-menu">
-            <div class="navbar-end">
-                <a class="navbar-item is-white" href="#about">
-                    <span class="icon">
-                        <i class="fas fa-info"></i>
-                    </span>
+            <div class="navbar-end has-background-primary is-fg">
+                <a class="navbar-item is-fg" href="about.html">
                     <span>About</span>
                 </a>
-                <a class="navbar-item is-white" href="#projects">
-                    <span class="icon">
-                        <i class="fas fa-th-list"></i>
-                    </span>
+                <a class="navbar-item is-fg" href="projects.html">
                     <span>Projects</span>
                 </a>
-                <a class="navbar-item is-white" href="#about">
-                    <span class="icon">
-                        <i class="fas fa-envelope"></i>
-                    </span>
+                <a class="navbar-item is-fg" href="contact.html">
                     <span>Contact</span>
                 </a>
             </div>
@@ -53,31 +48,47 @@
     </nav>
 
     <!-- Header -->
-    <section class="hero has-background-primary is-fullheight is-fullheight-with-navbar">
+    <section class="hero has-background-primary is-fullheight">
         <div class="hero-body">
-            <div class="container is-white has-scroll">Hello! I'm
-                <h1 class="title is-white is-1 ">
+            <div class="container is-yellow has-scroll">Hello! I'm
+                <h1 class="title is-green is-1 ">
                     James Girven
                 </h1>
-                <h2 class="subtitle is-white is-3">
-                    Computer Science graduate
+                <h2 class="subtitle is-fg is-4">
+                    Junior Software Developer
                 </h2>
+                <ul>
+                    <a href="https://github.com/Girv98" aria-label="Github" target="_blank" class="is-fg">
+                        <span class="icon">
+                            <i class="fab fa-github fa-lg"></i>
+                        </span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jgirven" aria-label="LinkedIn" target="_blank" class="is-fg">
+                        <span class="icon">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </span>
+                    </a>
+                    <!-- <button onclick="location.href=&quot;mailto:james.girven10@gmail.com&quot;"
+                        class="button is-fullwidth" title="Email Me">
+                        <span class="icon">
+                            <i class="far fa-envelope fa-lg"></i>
+                        </span>
+                    </button> -->
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- About -->
-    <section class="section has-background-dark" id="about">
+    <!-- <section class="section has-background-dark" id="about">
         <div class="sect-cont">
-            <!-- Title -->
+            
             <div class="section-heading">
                 <h3 class="title is-2 has-scroll">About Me</h3>
-                <!-- <h4 class="subtitle is-5">Jack of all trades, master of "some"</h4> -->
             </div>
 
             <div class="columns has-same-height is-vcentered has-scroll">
                 <div class="column box">
-                    <!-- Profile picture -->
                     <div class="">
                         <div class="card-image">
                             <img src="assets/selfie.jpg" alt="A picture of me">
@@ -93,7 +104,6 @@
                 </div>
 
                 <div class="column box has-background-primary">
-                    <!-- Profile -->
                     <div class="">
                         <div class="card-content">
                             <h3 class="title is-4">Links & Contact</h3>
@@ -161,161 +171,12 @@
                     </div>
                 </div>
             </div>
-            <!--
-            <div class="column">
-                <!-- Skills --
-                
-                <div class="card">
-                    <div class="card-content skills-content">
-                        <h3 class="title is-4">Skills</h3>
-                        <div class="content">
-
-                            <article class="media">
-                                <div class="media-content">
-                                    <div class="content">
-                                        <p>
-                                            <strong>JavaScript:</strong>
-                                            <br>
-                                            <progress class="progress is-$red" value="90" max="100"></progress>
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="media">
-                                <div class="media-content">
-                                    <div class="content">
-                                        <p>
-                                            <strong>Vue.js:</strong>
-                                            <br>
-                                            <progress class="progress is-primary" value="90" max="100"></progress>
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="media">
-                                <div class="media-content">
-                                    <div class="content">
-                                        <p>
-                                            <strong>Node.js:</strong>
-                                            <br>
-                                            <progress class="progress is-primary" value="75" max="100"></progress>
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="media">
-                                <div class="media-content">
-                                    <div class="content">
-                                        <p>
-                                            <strong>HTML5/CSS3</strong>
-                                            <br>
-                                            <progress class="progress is-primary" value="95" max="100"></progress>
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="media">
-                                <div class="media-content">
-                                    <div class="content">
-                                        <p>
-                                            <strong>Databases</strong>
-                                            <br>
-                                            <progress class="progress is-primary" value="66" max="100"></progress>
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
-        </div>
-    </section>
-
-    <!-- Skills tags -->
-    <!-- <br>
-        <div class="tags custom-tags">
-          <span class="tag is-light">Node.js</span><span class="tag is-light">Express.js</span><span class="tag is-light">VueJS</span><span
-            class="tag is-light">JavaScript</span><span class="tag is-light">HTML5</span><span class="tag is-light">Canvas</span><span
-            class="tag is-light">CSS3</span><span class="tag is-light">Bulma</span><span class="tag is-light">Bootstrap</span><span
-            class="tag is-light">jQuery</span><span class="tag is-light">Pug</span><span class="tag is-light">Stylus</span><span
-            class="tag is-light">SASS/SCSS</span><span class="tag is-light">Webpack</span><span class="tag is-light">Git</span><span
-            class="tag is-light">ASP.NET Web Forms</span><span class="tag is-light">MSSQL</span><span class="tag is-light">MongoDB</span><span
-            class="tag is-light">Apache Cordova</span><span class="tag is-light">Chrome Extensions</span>
-        </div> -->
-
-    <!-- Services -->
-    <!--
-  <section class="section" id="services">
-    <div class="section-heading">
-      <h3 class="title is-2">Services</h3>
-      <h4 class="subtitle is-5">What can I do for you?</h4>
-    </div>
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <div class="box">
-            <div class="content">
-              <h4 class="title is-5">Front End Web Development</h4>
-              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
-              Vue.js.
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="box">
-            <div class="content">
-              <h4 class="title is-5">Back End Web Development</h4>
-              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="columns">
-        <div class="column">
-          <div class="box">
-            <div class="content">
-              <h4 class="title is-5">Front End Web Development</h4>
-              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
-              Vue.js.
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="box">
-            <div class="content">
-              <h4 class="title is-5">Back End Web Development</h4>
-              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-    <!-- CV -->
-    <!--
-    <section class="section" id="cv">
-        <div class="section-heading">
-            <h3 class="title is-2">My CV</h3>
-            <h4 class="subtitle is-5">More about my past</h4>
-            <a href="#" class="button is-link is-medium">
-                <span class="icon">
-                    <i class="fas fa-file-alt"></i>
-                </span>
-                <span>Download My Resume</span>
-            </a>
         </div>
     </section> -->
 
+
     <!-- Portfolio -->
-    <section class="section has-background-dark" id="projects">
+    <!-- <section class="section has-background-dark" id="projects">
         <div class="container">
             <div class="section-heading has-scroll">
                 <h3 class="title is-2">Projects</h3>
@@ -326,7 +187,6 @@
                 <div class="columns">
 
                     <div class="column is-4">
-                        <!-- admin -->
                         <div class="card has-scroll">
                             <header class="card-header">
                                 <p class="card-header-title">
@@ -357,7 +217,6 @@
                     </div>
 
                     <div class="column is-4">
-                        <!-- cheatsheet -->
                         <div class="card has-scroll">
                             <header class="card-header">
                                 <p class="card-header-title">
@@ -369,10 +228,6 @@
                                 </p>
                             </header>
                             <div class="card-content">
-                                <!-- <figure class="image">
-                                    <img src="https://dummyimage.com/555x255/000/fff"
-                                        alt="Cheatsheet template screenshot">
-                                </figure> -->
                                 A cross platform mobile application that allows users to track their mood and anxiety
                                 over time.<br><br>
                                 <hr>
@@ -412,7 +267,6 @@
                     </div>
 
                     <div class="column is-4">
-                        <!-- cheatsheet -->
                         <div class="card has-scroll">
                             <header class="card-header">
                                 <p class="card-header-title">
@@ -447,7 +301,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Achievement Level -->
     <!-- <section class="section">
@@ -478,17 +332,15 @@
       </div>
     </nav>
   </section> -->
-
+    
+    </div>
     <!-- Footer -->
-    <footer class="footer">
-        <div class="section-heading has-text-centered">
-            <p>
-                James Girven 2020
-            </p>
+    <footer class="footer has-background-primary">
+        <div class="content has-text-centered">
+            James Girven 2024
         </div>
     </footer>
-
-
+            
     <script src="https://unpkg.com/scrollreveal"></script>
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 	<script src="js/scroll.js"></script>

@@ -8,8 +8,7 @@
         menu.classList.toggle('is-active');
 	  
 	  items.forEach(function(item) {
-		  
-		  item.classList.toggle('is-white');
+        item.classList.toggle('has-background-light');
 	  });
 	  
 	  
