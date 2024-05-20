@@ -1,4 +1,5 @@
 :root {
+	--bgm: #232A2E;
 	--bgd: #2D353B;
 	--bgl: #3D484D;
 	--fg: #D3C6AA;
@@ -17,6 +18,14 @@
 	font-optical-sizing: auto;
 }
 
+*:focus {
+	outline-color: var(--green) !important;
+	background-color: transparent !important;
+	outline-style: solid !important;
+	outline-offset: 5px !important;
+	/* color: var(--bgd) !important; */
+}
+
 body {
 	background-color: var(--bgd) !important;
 	display: flex;
@@ -28,6 +37,20 @@ body {
 	flex: 1;
 }
 
+button {
+	background-color: var(--blue) !important;
+	color: var(--bgd) !important;
+}
+
+button:hover {
+	background-color: var(--red) !important;
+	color: var(--bgm) !important;
+}
+
+button:focus {
+	outline-color: var(--green) !important;
+	background-color: var(--blue) !important;
+}
 
 .sect-cont {
 	max-width: 1344px !important;
@@ -145,11 +168,7 @@ a:hover{
 	color: #E67E80 !important;
 }
 
-*:focus {
-	outline-color: var(--green) !important;
-	background-color: transparent !important;
-	/* color: var(--bgd) !important; */
-}
+
 
 .has-background-light:hover {
 	background-color: var(--bgl) !important;
