@@ -59,9 +59,33 @@ button:focus {
 }
 
 .box {
-	box-shadow: 0 0.5em 1em -0.125em black, 0 0 0 1px black !important;
-	background-color: #F4F6F5 !important;
-	margin: 10px;
+	box-shadow: 0 0.5em 1em -0.125em var(--bgd), 0 0 0 1px var(--bgd) !important;
+	background-color: var(--bgl) !important;
+	color: var(--yellow);
+	margin: 1.2rem;
+	padding: 1.2rem;
+	overflow: hidden;
+}
+
+.box header {
+	color: var(--green) !important;
+}
+
+.is-danger {
+	background-color: var(--red) !important;
+}
+
+
+.box .tags .tag {
+	background-color: var(--bgl);
+	color: var(--green);
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.box a {
+	color: var(--blue);
+	font-size: 1.5rem;
 }
 
 .title { color: var(--green) !important; }

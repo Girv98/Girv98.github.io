@@ -7,10 +7,8 @@
         burger.classList.toggle('is-active');
         menu.classList.toggle('is-active');
 	  
-	  items.forEach(function(item) {
-        item.classList.toggle('has-background-light');
-	  });
-	  
-	  
+	    items.forEach(function(item) {
+            item.classList.toggle('has-background-light');
+	    });
     });
 })();

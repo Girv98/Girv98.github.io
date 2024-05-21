@@ -1,6 +1,6 @@
   ScrollReveal().reveal('.has-scroll', {
-    delay: 400,
+    delay: 100,
     distance: '200px',
-    duration: 1500,
+    duration: 1000,
     origin: 'bottom',
 });

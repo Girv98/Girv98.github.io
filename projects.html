@@ -8,15 +8,17 @@
     <title>Projects - James Girven</title>
     <meta name="description" content="This site is intended as a repository all things me.">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
     <script async type="text/javascript" src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/index.css">
+
+    <script defer src="https://unpkg.com/scrollreveal"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+	<script defer src="js/scroll.js"></script>
 </head>
 
 <body>
@@ -46,14 +48,146 @@
         </div>
     </nav>
 
-    <!-- Header -->
-    <section class="hero has-background-primary is-fullheight-with-navbar">
-        <div class="hero-body">
-            <div class="container has-scroll has-text-centered">
-                <div class="title is-green is-1">
-                    Under Construction
+    <section class="section is-large has-background-primary">
+        <div class="container">
+            <div class="section-heading has-scroll">
+                <h1 class="title is-green is-2">Projects</h1>
+                <h4 class="subtitle is-5">Some of my latest work</h4>
+            </div>
+        </div>
+        <div class="container portfolio-container">
+            <div class="grid is-col-min-12">
+                <!-- ACSA -->
+                <div class="cell">
+                    <div class="box has-scroll">
+                        <span class="tag is-pulled-right is-danger">WIP</span>
+                        <header class="card-header">
+                            ASCA - Sound Change Applier
+                        </header>
+                        <br>
+                        <div class="content">
+                            A linguistics tool that allows the application of phonological rules
+                            to an input lexicon using distinctive features
+                        </div>
+                        <footer class="box-footer">
+                            <div class="container">
+                                <a href="https://github.com/Girv98" aria-label="To Github" target="_blank" class="box-link is-pulled-left">
+                                    <span class="icon"> <i class="fab fa-github"></i></span>
+                                </a>
+                                <a href="asca.html" aria-label="To ASCA" target="_blank" class="box-link is-pulled-right">
+                                    <span class="icon"> <i class="fas fa-square-arrow-up-right"></i></span>
+                                </a>
+                                <div class="tags is-centered">
+                                    <span class="tag">Rust</span>
+                                    <span class="tag">WASM</span>
+                                    <span class="tag">JSON</span>
+                                    <span class="tag">JS</span>
+                                    <span class="tag">CSS</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <!-- Tabify -->
+                <div class="cell">
+                    <div class="box has-scroll">
+                        <span class="tag is-pulled-right is-danger">
+                            <i class="fa-solid fa-terminal"></i>
+                        </span>
+                        <header class="card-header">
+                            Tabify
+                        </header>
+                        <br>
+                        <div class="content">
+                            A simple automatic guitar tablature transcription program built in python for third year dissertation at the University of Lincoln
+                        </div>
+                        <footer class="box-footer">
+                            <div class="container">
+                                <a href="https://github.com/Girv98/Tabify" aria-label="To Github" target="_blank" class="box-link is-pulled-left">
+                                    <span class="icon"> <i class="fa-brands fa-github"></i></span>
+                                </a>
+                                <!-- <a href="https://github.com/Girv98/Tabify" aria-label="To ASCA" target="_blank" class="box-link is-pulled-right">
+                                    <span class="icon"> <i class="fas fa-square-arrow-up-right"></i></span>
+                                </a> -->
+                                <div class="tags is-centered">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">NumPy</span>
+                                    <span class="tag">SciPy</span>
+                                    <span class="tag">Librosa</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <!-- ACP -->
+                <div class="cell">
+                    <div class="box has-scroll">
+                        <div class="is-pulled-right">
+                            <span class="tag is-danger">WIP</span>
+                            <span class="tag is-danger">
+                                <i class="fa-solid fa-terminal"></i>
+                            </span>
+                        </div>
+                        <header class="card-header">
+                            ACP - Basic Chess Program
+                        </header>
+                        <br>
+                        <div class="content">
+                            A terminal based chess program
+                        </div>
+                        <footer class="box-footer">
+                            <div class="container">
+                                <a href="https://github.com/Girv98/basic-chess-program" aria-label="To Github" target="_blank" class="box-link is-pulled-left">
+                                    <span class="icon"> <i class="fab fa-github"></i></span>
+                                </a>
+                                <!-- <a href="https://github.com/Girv98/Tabify" aria-label="To ASCA" target="_blank" class="box-link is-pulled-right">
+                                    <span class="icon"> <i class="fas fa-square-arrow-up-right"></i></span>
+                                </a> -->
+                                <div class="tags is-centered">
+                                    <span class="tag">Rust</span>
+                                    <span class="tag">Terminal</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <!-- Dotfiles -->
+                <div class="cell">
+                    <div class="box has-scroll">
+                        <div class="is-pulled-right">
+                            <span class="tag is-danger">WIP</span>
+                            <span class="tag is-danger">
+                                <i class="fa-brands fa-linux"></i>
+                            </span>
+                        </div>
+                        <header class="card-header">
+                            Girv's Dotfiles
+                        </header>
+                        <br>
+                        <div class="content">
+                            My current linux Arch-i3 setup
+                        </div>
+                        <footer class="box-footer">
+                            <div class="container">
+                                <a href="https://github.com/Girv98/dotfiles" aria-label="To Github" target="_blank" class="box-link is-pulled-left">
+                                    <span class="icon"> <i class="fab fa-github"></i></span>
+                                </a>
+                                <!-- <a href="https://github.com/Girv98/" aria-label="To ASCA" target="_blank" class="box-link is-pulled-right">
+                                    <span class="icon"> <i class="fas fa-square-arrow-up-right"></i></span>
+                                </a> -->
+                                <div class="tags is-centered">
+                                    <span class="tag">ArchLinux</span>
+                                    <span class="tag">i3</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="container has-scroll has-text-centered">
+            <br><br>
+            <h4 class="subtitle">More to Come</h4> 
         </div>
     </section>
 
@@ -65,10 +199,6 @@
             </p>
         </div>
     </footer>
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-	<script src="js/scroll.js"></script>
 </body>
 
 </html>
