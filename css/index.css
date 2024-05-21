@@ -33,6 +33,10 @@ body {
     flex-direction: column;
 }
 
+.has-scroll {
+	visibility: hidden;
+}
+
 #wrapper {
 	flex: 1;
 }
